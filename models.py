@@ -3,7 +3,7 @@ from sqlalchemy import Column, Integer, String, Text, DateTime
 from database import Base
 
 
-class Question(Base):
+class ParkInfo(Base):
     __tablename__ = "park"
 
     id = Column(Integer, primary_key=True)

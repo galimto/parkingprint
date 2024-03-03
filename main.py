@@ -24,4 +24,4 @@ def hello():
     return {"message": "안녕하세요 파이보23  "}
 
 
-app.include_router(park_router.router, prefix="")
+app.include_router(park_router.router, tags=["sss", "ddd"])
