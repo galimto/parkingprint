@@ -15,3 +15,8 @@ def create_park(db: Session, park: ParkCreate):
     )
     db.add(parkData)
     db.commit()
+
+
+def get_park_list(db: Session):
+    park_list = db.query(ParkInfo).all()
+    return park_list
